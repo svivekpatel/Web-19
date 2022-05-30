@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #F2F6FF;
+        }
+        h2{
+            text-align: center;
+
+        }
+        #box{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        #box>div{
+            padding: 20px;
+            width:22%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #box>div>img{
+            width:100%
+        }
+        button{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px 20px;
+            color: red;
+            border: 1px solid red;
+            background-color: white;
+            border-radius: 5px;
+        }
+        #box>div>img+p{
+            color: #3470e4;
+            margin-bottom: -15px;
+        }
+        #box>div>img~p,h3{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Masai In The News</h2>
+  <div id="outer_box">
+    <div id="box">
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="">
+            <p>21 Dec 2021</p>
+            <h3>Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.</h3>
+            <p>With their latest acquisition, Masai moves one step closer to becoming...</p>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" alt="">
+            <p>21 Dec 2021</p>
+            <h3>Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.</h3>
+            <p>With their latest acquisition, Masai moves one step closer to becoming...</p>
+        </div>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png" alt="">
+            <p>21 Dec 2021</p>
+            <h3>Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.</h3>
+            <p>With their latest acquisition, Masai moves one step closer to becoming...</p>
+        </div>
+    </div>
+    <div id="button">  <button>SEE MORE ></button></div>
+  
+  </div>
+   
+</body>
+</html>

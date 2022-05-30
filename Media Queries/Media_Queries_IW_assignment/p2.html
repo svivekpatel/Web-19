@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body>h1{
+            margin:auto;
+            text-align: center;
+            width:30%;
+            margin-top: 40px;
+        }
+        body>h1+p{
+            margin:auto;
+            text-align: center;
+            width:40%;
+            margin-top:30px;
+            color: grey;
+        }
+        body>div{
+            display:flex;
+
+        }
+        #box{
+            margin: auto;
+          text-align: center;
+          width:60%;
+          margin-top: 40px;
+        }
+      #box>div{
+          margin: auto;
+          text-align: center;
+          width:26%;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          padding: 20px;
+          border-radius: 10px;
+      }
+      button{
+          padding: 10px 30px;
+          font-weight: bolder;
+          background-color: white;
+          color: #007AFF;
+          border: 1px solid #007AFF;
+          border-radius: 5px;
+      }
+      #box div>h2+h1~p{
+          color: grey;
+      }
+      #box div>h2+h1+p{
+          font-style: italic;
+          margin-top: -20px;
+      }
+      #box div>h2+h1:nth-child(1){
+          color: green;
+      }
+      button:hover{
+          color: white;
+          background-color: #007AFF;
+      }
+      @media screen and (min-width:450px) and (max-width:720px){
+          
+      }
+    </style>
+</head>
+<body>
+    <h1>Chose a plan that right for your business</h1>
+    <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like.</p>
+    <div id="box">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Pre month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <div>
+                <h2>Business Plan</h2>
+                <h1>$39.00</h1>
+                <p>Pre month</p>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+                <button>Start Now</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Premium Plan</h2>
+                <h1>$59.00</h1>
+                <p>Pre month</p>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+                <button>Start Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

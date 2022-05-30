@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            width: 100%;
+            height: 60px;
+            
+            display: flex;
+            justify-content: space-around;
+        }
+        #navbar>div:first-child{
+            width:10%;
+           
+         } 
+         #navbar>div:last-child{
+            width:70%;
+          
+            display: flex;
+            justify-content: space-around;
+         } 
+         #navbar div{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+         }
+         p+div{
+             display: flex;
+             background-color: #f2fdff;
+             color: #6e71cc;
+             justify-content: center;
+             align-items: center;
+             padding: 15px 10px;
+             border-radius: 5px;
+             margin: 20px;
+         } 
+         p+div>img{
+             width:20px;
+             height: 20px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         select{
+             border: 0px;
+         }
+         button{
+             padding: 12px;
+             border:1px solid red;
+             color: red;
+             background-color: white;
+             border-radius: 5px;
+         }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+        </div>
+        <div>
+            <div>
+                <select>
+                    <option value="">Courses</option>
+                    <option value="">DSA</option>
+                    <option value="">Coding</option>
+                    <option value="">Data Analytics</option>
+                    <option value="">Design</option>
+                </select>
+                <p>Fees & ISA</p>
+                <p>About Us</p>
+                <p>Hire From Us</p>
+                <p>FAQ</p>
+                <P>Events</P>
+                <div>
+                    <div>REFER & EARN</div>
+                    <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
+                </div>
+                <button>LOGIN</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

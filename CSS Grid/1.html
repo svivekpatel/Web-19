@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: wheat;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(2,100px);
+        gap: 20px 40px;
+        grid-template-areas: 
+        "rd tel ylo"
+        "rd orng pnk"
+        "blu blu blu";
+
+        }
+        #box>div{
+            border: 5px solid black;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        #box>div:nth-child(1){
+            background-color: blue;
+            grid-area: blu;
+        }
+        #box>div:nth-child(2){
+            background-color: teal;
+            grid-area: tel;
+           
+        }
+        #box>div:nth-child(3){
+            background-color: pink;
+            grid-area: pnk;
+        }
+        #box>div:nth-child(4){
+            background-color: yellow;
+            grid-area: ylo;
+        }
+        #box>div:nth-child(5){
+            background-color: orange;
+            grid-area: orng;
+          
+        }
+        #box>div:nth-child(6){
+            background-color: red;
+            grid-area: rd;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

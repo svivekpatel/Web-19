@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+          color: teal;
+          width:40%;
+          margin: auto;
+          text-align: center;
+          font-weight: bolder;
+          margin-top: 50px;
+          
+      }
+      #box{
+          width: 30%;
+          margin: auto;
+          text-align: center;
+          margin-top: 30px;
+          padding-bottom: 30px;
+          border-radius: 8px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      #box>div,input{
+          width: 80%;
+          text-align: center;
+          margin: auto;
+          margin-top: 25px;
+      }
+      #inner_box{
+          width:80%;
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(4,45px);
+          gap:10px;
+      }
+      #inner_box>div{
+          text-align: center;
+          padding-top: 20%;
+          border-radius: 5px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          font-weight: bolder;
+      }
+      input{
+          height: 45px;
+          border-radius: 6px;
+          border: 0px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      #cal{
+          background-color: red;
+          color: white;
+      }
+      .black{
+          color: white;
+          background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="box">
+        <input type="number">
+        <div id="inner_box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="black">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="black">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="black">X</div>
+            <div id="cal">C</div>
+            <div>0</div>
+            <div class="black">=</div>
+            <div class="black">/</div>
+        </div>
+    </div>
+</body>
+</html>
